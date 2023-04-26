@@ -22,46 +22,32 @@
     </header>
     <main>
       <h1>Book a Table</h1>
-      <form method="POST">
+      <form>
         <div>
-          <label for="booking_date">Booking Date</label>
+          <label for="client_email">Email Address</label>
+          <input type="email" id="client_email" name="client_email" required />
+        </div>
+        <div>
+          <label for="booking_date">Date of Booking</label>
           <input type="date" id="booking_date" name="booking_date" />
         </div>
         <div>
-          <label for="booking_peoble">Number of People</label>
+          <label for="number_people">Number of people</label>
           <input
-            type="range"
-            id="booking_peoble"
-            name="booking_peoble"
+            type="number"
+            id="number_people"
+            name="booking_date"
             min="1"
-            max="10"
-            value="4"
-            oninput="this.nextElementSibling.value = this.value"
+            max="8"
           />
-          <output>4</output>
         </div>
         <div>
-          <label for="booking_location">Location</label>
-          <input
-            id="booking_location"
-            name="booking_location"
-            list="locations"
-          />
-          <datalist id="locations">
-            <option value="Downtown">Downtown</option>
-            <option value="Uptown">Uptown</option>
-          </datalist>
+          <label>
+            <input type="checkbox" id="policy" name="policy" required />
+            I agree to the cancellation policy
+          </label>
         </div>
-        <fieldset id="size">
-          <input type="radio" value="2" name="size" /> 2-person table
-          <input type="radio" value="4" name="size" checked /> 4 person table
-          <input type="radio" value="6" name="size" /> 6-person table
-        </fieldset>
-        <fieldset id="location">
-          <input type="radio" value="indoors" name="location" checked /> Indoors
-          <input type="radio" value="Outdoors" name="location" /> Outdoors
-        </fieldset>
-        <button type="submit">Book table</button>
+        <button type="submit">Book Now</button>
       </form>
     </main>
   </body>
