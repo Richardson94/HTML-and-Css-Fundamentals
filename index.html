@@ -22,16 +22,34 @@
     </header>
     <main>
       <h1>About</h1>
-      <video width="320" height="240" controls muted>
+      <p>Here is an example of an iframe:</p>
+      <iframe src="https://www.example.com"></iframe>
+      <hr />
+      <video controls width="320" height="240">
         <source src="video.mp4" type="video/mp4" />
       </video>
-      <p>
-        Little Lemon is a family-owned meditarrean restaurant, focused on
-        traditional food
-      </p>
-      <audio loop controls>
-        <source src="music.ogg" type="audio/ogg" />
-      </audio>
+
+      <form>
+        <div>
+          <label for="rating">Rating</label>
+          <input
+            type="range"
+            min="1"
+            max="5"
+            id="rating"
+            name="rating"
+            list="ratings"
+          />
+          <datalist id="ratings">
+            <option value="1" label="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+        <button type="submit">Submit Rating</button>
+      </form>
     </main>
   </body>
 </html>
