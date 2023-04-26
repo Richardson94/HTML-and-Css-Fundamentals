@@ -11,3 +11,6 @@ img {
   height: 50px;
   width: 50px;
 }
+input:focus:invalid {
+  border: 2px solid red;
+}

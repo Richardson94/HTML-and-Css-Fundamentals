@@ -38,11 +38,23 @@
       <form>
         <div>
           <label for="user_first_name">First Name</label>
-          <input type="text" id="user_first_name" name="user_first_name" />
+          <input
+            type="text"
+            id="user_first_name"
+            name="user_first_name"
+            required
+            minlength="3"
+          />
         </div>
         <div>
           <label for="user_last_name">Last Name</label>
-          <input type="tex" id="user_last_name" name="user_last_name" />
+          <input
+            type="tex"
+            id="user_last_name"
+            name="user_last_name"
+            required
+            minlength="3"
+          />
         </div>
         <div>
           <label for="user_email">Email</label>
@@ -50,7 +62,13 @@
         </div>
         <div>
           <label for="user_password">Password</label>
-          <input type="password" id="user_password" name="user_password" />
+          <input
+            type="password"
+            id="user_password"
+            name="user_password"
+            required
+            minlength="5"
+          />
         </div>
         <div>
           <label aria-label="user_confirm_password">Confirm Password</label>
@@ -58,6 +76,8 @@
             type="password"
             id="user_confirm_password"
             name="user_confirm_password"
+            required
+            minlength="5"
           />
         </div>
         <div>
