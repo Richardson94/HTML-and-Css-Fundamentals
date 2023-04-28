@@ -9,3 +9,14 @@ header {
   text-align: center;
   padding: 2em;
 }
+
+main {
+  background-color: #395b64;
+  text-align: center;
+  padding: 2em;
+}
+footer {
+  background-color: #a5c9ca;
+  text-align: center;
+  padding: 2em;
+}
